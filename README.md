@@ -2,3 +2,4 @@
 Info 340 Group Project 
 
 Aries Balahadia
+Rashid Bara
