@@ -1,4 +1,36 @@
-ENTER CSS HERE 
+.imagereduce {
+    display: block;
+    margin: 0 auto 5rem auto;
+    height: 500px;
+    width: 500px;
+    background-color: #f2f2f2;
+}
+
+h1, p{
+    font-family:'Encode Sans Condensed',Sans-serif, Arial;
+    
+}
+
+h1 { 
+    color: #4B2E83;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+a {
+    color: #4B2E83;
+    font-size: 1em;
+    font-weight: 500; 
+}
+
+
+
+p {
+    font-size: large;
+    font-weight: 300;
+
+}
+
 
 
 
