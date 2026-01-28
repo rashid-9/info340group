@@ -6,7 +6,7 @@
     background-color: #f2f2f2;
 }
 
-h1, p{
+h1, p, h2, h3{
     font-family:'Encode Sans Condensed',Sans-serif, Arial;
     
 }
@@ -17,6 +17,17 @@ h1 {
     font-weight: bold;
 }
 
+h2 { 
+    color: #4B2E83;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+h3 { 
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
 a {
     color: #4B2E83;
     font-size: 1em;
