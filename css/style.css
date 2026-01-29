@@ -83,6 +83,14 @@ h3 {
 .budget-section {
   margin: 3rem auto;
   max-width: 900px;
+/* I used AI to help me write this is CSS */
+.today-foods {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(880px, 92vw);
+  z-index: 999;
 }
 
 .budget-card {
