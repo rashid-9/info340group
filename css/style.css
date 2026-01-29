@@ -79,5 +79,71 @@ h3 {
     width: auto;
 }
 
+/* ARIES CSS */
+/* CSS for "Today's Budget" section */
+
+.budget-section {
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+.budget-card {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remaining {
+  color: #1aa34a;
+  font-weight: bold;
+}
+
+.bar {
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  height: 12px;
+  margin: 0.75rem 0 1.5rem 0;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+/* Static placeholder widths */
+.calories {
+  width: 20%;
+  background-color: #2563eb;
+}
+
+.protein {
+  width: 7%;
+  background-color: #a855f7;
+}
+
+.carbs {
+  width: 36%;
+  background-color: #2563eb;
+}
+
+.fat {
+  width: 8%;
+  background-color: #f97316;
+}
+
+.macro p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
 
 
