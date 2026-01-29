@@ -77,117 +77,71 @@ h3 {
     width: auto;
 }
 
-.today-foods {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(880px, 92vw);
-  z-index: 999;
+/* ARIES CSS */
+/* CSS for "Today's Budget" section */
+
+.budget-section {
+  margin: 3rem auto;
+  max-width: 900px;
 }
 
-body {
-    padding-bottom: 220px;
+.budget-card {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
-.today-foods__header {
+.budget-header {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-
-.today-foods__icon {
-  width: 20px;
-  height: 20px;
-  color: #16a34a; 
-  display: inline-flex;
-}
-
-.today-foods__icon svg {
-  width: 20px;
-  height: 20px;
-}
-
-.today-foods__title {
-  margin: 0;
-  color: #1f2937;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.today-foods__list {
-  display: grid;
-  gap: 14px;
-}
-
-.food-item {
-  background: #f6f8fb;
-  border-radius: 12px;
-  padding: 16px 18px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  align-items: center;
 }
 
-.food-item__left {
+.remaining {
+  color: #1aa34a;
+  font-weight: bold;
+}
+
+.bar {
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  height: 12px;
+  margin: 0.75rem 0 1.5rem 0;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+/* Static placeholder widths */
+.calories {
+  width: 20%;
+  background-color: #2563eb;
+}
+
+.protein {
+  width: 7%;
+  background-color: #a855f7;
+}
+
+.carbs {
+  width: 36%;
+  background-color: #2563eb;
+}
+
+.fat {
+  width: 8%;
+  background-color: #f97316;
+}
+
+.macro p {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  justify-content: space-between;
+  margin: 0.5rem 0;
 }
-
-.food-item__name {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 700;
-  color: #101828;
-}
-
-.food-item__sub {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-  color: #667085;
-}
-
-.food-item__right {
-  text-align: right;
-  min-width: 170px;
-}
-
-.food-item__cal {
-  font-size: 16px;
-  font-weight: 800;
-  margin-bottom: 6px;
-  color: #101828;
-}
-
-.food-item__unit {
-  font-weight: 600;
-  color: #374151;
-}
-
-.food-item__macros {
-  font-size: 13px;
-  font-weight: 400;
-  color: #475467;
-}
-
-@media (max-width: 520px) {
-  .food-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .food-item__right {
-    text-align: left;
-    min-width: auto;
-  }
-}
-
-
-
 
 
 
