@@ -1,6 +1,10 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+main {
+  padding: 1.5rem;
 }
 
 .imagereduce {
@@ -149,11 +153,79 @@ h3 {
   margin: 0.5rem 0;
 }
 
+.weekly-chart .bar {
+  flex: 1;
+}
+
 /* ARIES CSS for Progress-page */
 
-.progress-section {
-  margin-bottom: 3rem;
+@media (max-width: 480px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .progress-section {
+    margin-bottom: 2rem;
+  }
+
+  .nav-links {
+    gap: 24px;
+  }
+
+  h1 { 
+    font-size: 1.25em; 
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .budget-card {
+    padding: 1.5rem;
+  }
+
+  .weekly-chart .day p {
+    font-size: 0.95em;
+  }
 }
+
+@media (min-width: 768px) {
+  .budget-section {
+    max-width: 1000px;
+  }
+
+  .progress-section {
+    margin-bottom: 4rem;
+  }
+
+  .weekly-chart .day {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .weekly-chart .day p {
+    min-width: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    gap: 120px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+}
+
 
 
 
