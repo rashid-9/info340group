@@ -90,6 +90,7 @@ h3 {
   padding: 2rem 2.5rem;
   border-radius: 20px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .budget-header {
@@ -141,6 +142,12 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 0;
+}
+
+/* ARIES CSS for Progress-page */
+
+.progress-section {
+  margin-bottom: 3rem;
 }
 
 
