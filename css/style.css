@@ -226,6 +226,11 @@ h3 {
 
 /* CSS for log-food.html */
 
+/* Spacing */
+.progress-section {
+  margin-bottom: 2rem;
+}
+
 /* Search form */
 .logfood-search {
   margin-top: 1rem;
@@ -233,7 +238,7 @@ h3 {
 
 .logfood-input {
   width: 100%;
-  font-family: 'Encode Sans Condensed', Sans-serif, Arial;
+  font-family: 'Helvetica';
   font-size: 1.8rem;
   padding: 1rem 1.25rem;
   border: 2px solid #e5e7eb;
@@ -250,7 +255,7 @@ h3 {
 .logfood-add {
   display: inline-block;
   margin-top: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #2563eb;
   text-decoration: none;
