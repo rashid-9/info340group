@@ -277,3 +277,110 @@ h3 {
   white-space: nowrap;
   border: 0;
 }
+
+/* Todays Food CSS */
+
+.today-foods {
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px 22px 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  margin: 0 auto;
+
+}
+
+.today-foods__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+
+.today-foods__title {
+  font-size: 20px;
+  font-weight: 650;
+  margin: 0;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+
+.today-foods__icon {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  color: #16a34a; 
+}
+
+.today-foods__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+.today-foods__list {
+  display: grid;
+  gap: 12px;
+}
+
+
+.food-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 18px 18px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+
+.food-item__left {
+  min-width: 0;
+}
+
+.food-item__name {
+  font-size: 18px;
+  font-weight: 650;
+  margin: 0;
+  color: #0f172a;
+}
+
+.food-item__sub {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+
+.food-item__right {
+  text-align: right;
+  padding-left: 14px;
+  flex-shrink: 0;
+}
+
+.food-item__cal {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.food-item__unit {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin-left: 4px;
+}
+
+.food-item__macros {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #64748b;
+  white-space: nowrap;
+}
