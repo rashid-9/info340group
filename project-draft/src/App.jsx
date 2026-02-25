@@ -1,3 +1,4 @@
+import React from "react";
 import Progress from "./pages/Progress.jsx";
 import LogFood from "./pages/Log-food.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
