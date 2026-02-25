@@ -176,6 +176,7 @@ h3 {
 .goal-description {
   margin: 1rem 0 1.5rem 0;
   color: #111827;
+  white-space: calc(2);
 }
 
 .goal-metrics {
