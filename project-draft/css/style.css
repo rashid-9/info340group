@@ -1,6 +1,7 @@
 body {
   margin: 0rem;
   padding: 0rem;
+  font-family: 'Encode Sans Condensed', sans-serif;
 }
 
 main {
@@ -15,21 +16,10 @@ main {
     background-color: #f2f2f2;
 }
 
-h1, p, h2, h3{
-    font-family:'Encode Sans Condensed',Sans-serif, Arial;
-    
-}
-
 h1 { 
     color: #4B2E83;
     font-size: 2em;
     font-weight: bold;
-}
-
-h2 { 
-    color: #4B2E83;
-    font-size: 1.5em;
-    font-weight: 200;
 }
 
 h3 { 
@@ -76,10 +66,7 @@ h3 {
     padding: 0;
 }
 
-.nav-links-styling {
-    font-family: Helvetica;
-    font-weight: lighter;
-}
+
 
 .logo {
     height: 70px;
@@ -384,4 +371,19 @@ h3 {
   font-size: 13px;
   color: #64748b;
   white-space: nowrap;
+}
+
+.nav-links a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4B2E83;
+    text-decoration: underline;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(75, 46, 131, 0.1);
+    cursor: pointer;
 }
