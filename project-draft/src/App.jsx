@@ -2,6 +2,7 @@ import React from "react";
 import Progress from "./pages/Progress.jsx";
 import LogFood from "./pages/Log-food.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
+import "../css/style.css";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
