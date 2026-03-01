@@ -2,12 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header.jsx";
 import { calculateNutritionTargets } from "./nutrition.js";
 
-const MACRO_DATA = [
-  { name: "Protein", amount: "95g", className: "protein", percentage: 80 },
-  { name: "Carbohydrates", amount: "250g", className: "carbs", percentage: 65 },
-  { name: "Fats", amount: "70g", className: "fat", percentage: 90 }
-];
-
 const WEEKLY_DATA = [
   { day: "Monday", consumed: 1753 },
   { day: "Tuesday", consumed: 1250 },
@@ -47,27 +41,6 @@ export default function Progress() {
     );
   }
 
-  const macroData = [
-    {
-      name: "Protein",
-      className: "protein",
-      consumed: consumed.protein,
-      target: targets.protein,
-    },
-    {
-      name: "Carbohydrates",
-      className: "carbs",
-      consumed: consumed.carbs,
-      target: targets.carbs,
-    },
-    {
-      name: "Fats",
-      className: "fat",
-      consumed: consumed.fat,
-      target: targets.fat,
-    },
-  ];
-
   const totalWeekCalories = WEEKLY_DATA.reduce(
     (sum, day) => sum + day.consumed,
     0
@@ -98,8 +71,6 @@ export default function Progress() {
               {showPercentage ? "Show Grams" : "Show Percentage"}
             </button>
 
-
-            { }
             {[
               { name: "Protein", key: "protein", className: "protein" },
               { name: "Carbohydrates", key: "carbs", className: "carbs" },
@@ -144,7 +115,7 @@ export default function Progress() {
             </p>
 
             <div className="weekly-chart">
-              { }
+              
               {WEEKLY_DATA.map((dayData) => {
                 const percentage = Math.min(
                   Math.round((dayData.consumed / targets.calories) * 100),
