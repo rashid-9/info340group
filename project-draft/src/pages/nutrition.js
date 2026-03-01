@@ -1,4 +1,3 @@
-// utils/nutrition.js
 
 export function calculateNutritionTargets(userProfile) {
   const { age, height, weight, gender, activityLevel, goal, higherProtein } = userProfile;
