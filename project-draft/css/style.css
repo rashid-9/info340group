@@ -230,7 +230,7 @@ h3 {
 .logfood-input {
   width: 100%;
   font-family: 'Helvetica';
-  font-size: 1.8rem;
+  font-size: 18px;
   padding: 1rem 1.25rem;
   border: 2px solid #e5e7eb;
   border-radius: 16px;
@@ -246,8 +246,7 @@ h3 {
 .logfood-add {
   display: inline-block;
   margin-top: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 18px;
   color: #2563eb;
   text-decoration: none;
 }
