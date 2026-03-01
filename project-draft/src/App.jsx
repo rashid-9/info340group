@@ -2,6 +2,7 @@ import React from "react";
 import Progress from "./pages/Progress.jsx";
 import LogFood from "./pages/Log-food.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
+import Form from "./pages/Form";
 import "../css/style.css";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -10,7 +11,8 @@ export default function App() {
 return(
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Form />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/log-food" element={<LogFood />} />
         <Route path="/progress" element={<Progress />} />
 
@@ -19,3 +21,4 @@ return(
     </BrowserRouter>
   );
   }
+<Route path="/dashboard" element={<Dashboard />} />
