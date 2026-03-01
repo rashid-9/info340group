@@ -47,6 +47,27 @@ export default function Progress() {
     );
   }
 
+  const macroData = [
+    {
+      name: "Protein",
+      className: "protein",
+      consumed: consumed.protein,
+      target: targets.protein,
+    },
+    {
+      name: "Carbohydrates",
+      className: "carbs",
+      consumed: consumed.carbs,
+      target: targets.carbs,
+    },
+    {
+      name: "Fats",
+      className: "fat",
+      consumed: consumed.fat,
+      target: targets.fat,
+    },
+  ];
+
   const totalWeekCalories = WEEKLY_DATA.reduce(
     (sum, day) => sum + day.consumed,
     0
@@ -79,24 +100,37 @@ export default function Progress() {
 
 
             { }
-            {MACRO_DATA.map((macro) => (
-              <div className="macro" key={macro.name}>
-                <p>
-                  {macro.name}
-                  <span>
-                    {showPercentage
-                      ? `${macro.percentage}%`
-                      : macro.amount}
-                  </span>
-                </p>
-                <div className="bar">
-                  <div
-                    className={`bar-fill ${macro.className}`}
-                    style={{ width: `${macro.percentage}%` }}
-                  ></div>
+            {[
+              { name: "Protein", key: "protein", className: "protein" },
+              { name: "Carbohydrates", key: "carbs", className: "carbs" },
+              { name: "Fats", key: "fat", className: "fat" }
+            ].map((macro) => {
+
+              const percentage = Math.min(
+                Math.round((consumed[macro.key] / targets[macro.key]) * 100),
+                100
+              );
+
+              return (
+                <div className="macro" key={macro.key}>
+                  <p>
+                    {macro.name}
+                    <span>
+                      {showPercentage
+                        ? `${percentage}%`
+                        : `${consumed[macro.key]}g / ${targets[macro.key]}g`}
+                    </span>
+                  </p>
+
+                  <div className="bar">
+                    <div
+                      className={`bar-fill ${macro.className}`}
+                      style={{ width: `${percentage}%` }}
+                    ></div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
