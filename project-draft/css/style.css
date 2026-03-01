@@ -389,3 +389,329 @@ h3 {
     background-color: rgba(75, 46, 131, 0.1);
     cursor: pointer;
 }
+
+/* AI-generated code: Welcome/Onboarding Page Styles */
+.welcome-container {
+    min-height: 100vh; /* AI-generated code */
+    display: flex; /* AI-generated code */
+    align-items: center; /* AI-generated code */
+    justify-content: center; /* AI-generated code */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* AI-generated code */
+    padding: 2rem; /* AI-generated code */
+}
+
+/* AI-generated code: Welcome card wrapper */
+.welcome-card {
+    background: white; /* AI-generated code */
+    border-radius: 24px; /* AI-generated code */
+    padding: 3rem 2.5rem; /* AI-generated code */
+    max-width: 500px; /* AI-generated code */
+    width: 100%; /* AI-generated code */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* AI-generated code */
+    text-align: center; /* AI-generated code */
+}
+
+/* AI-generated code: Icon container */
+.welcome-icon {
+    margin-bottom: 1.5rem; /* AI-generated code */
+    display: flex; /* AI-generated code */
+    justify-content: center; /* AI-generated code */
+}
+
+/* AI-generated code: Welcome heading */
+.welcome-card h1 {
+    color: #2c3e50; /* AI-generated code */
+    font-size: 2rem; /* AI-generated code */
+    margin-bottom: 0.5rem; /* AI-generated code */
+}
+
+/* AI-generated code: Welcome subtitle */
+.welcome-subtitle {
+    color: #7f8c8d; /* AI-generated code */
+    font-size: 1rem; /* AI-generated code */
+    margin-bottom: 2rem; /* AI-generated code */
+}
+
+/* AI-generated code: Progress bar container */
+.progress-bar {
+    width: 100%; /* AI-generated code */
+    height: 4px; /* AI-generated code */
+    background: #e0e0e0; /* AI-generated code */
+    border-radius: 2px; /* AI-generated code */
+    margin-bottom: 2.5rem; /* AI-generated code */
+    overflow: hidden; /* AI-generated code */
+}
+
+/* AI-generated code: Progress bar fill */
+.progress-fill {
+    height: 100%; /* AI-generated code */
+    background: linear-gradient(90deg, #4A90E2 0%, #357ABD 100%); /* AI-generated code */
+    border-radius: 2px; /* AI-generated code */
+    transition: width 0.3s ease; /* AI-generated code */
+}
+
+/* AI-generated code: Form container */
+.welcome-form {
+    text-align: left; /* AI-generated code */
+}
+
+/* AI-generated code: Form section heading */
+.welcome-form h2 {
+    color: #2c3e50; /* AI-generated code */
+    font-size: 1.3rem; /* AI-generated code */
+    margin-bottom: 1.5rem; /* AI-generated code */
+}
+
+/* AI-generated code: Form group wrapper */
+.form-group {
+    margin-bottom: 1.5rem; /* AI-generated code */
+}
+
+/* AI-generated code: Form labels */
+.form-group label {
+    display: block; /* AI-generated code */
+    color: #34495e; /* AI-generated code */
+    font-size: 0.95rem; /* AI-generated code */
+    font-weight: 600; /* AI-generated code */
+    margin-bottom: 0.5rem; /* AI-generated code */
+}
+
+/* AI-generated code: Form inputs */
+.form-group input {
+    width: 100%; /* AI-generated code */
+    padding: 0.875rem 1rem; /* AI-generated code */
+    border: 2px solid #e0e0e0; /* AI-generated code */
+    border-radius: 12px; /* AI-generated code */
+    font-size: 1rem; /* AI-generated code */
+    transition: all 0.2s ease; /* AI-generated code */
+    box-sizing: border-box; /* AI-generated code */
+}
+
+/* AI-generated code: Input focus state */
+.form-group input:focus {
+    outline: none; /* AI-generated code */
+    border-color: #4A90E2; /* AI-generated code */
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1); /* AI-generated code */
+}
+
+/* AI-generated code: Gender options container */
+.gender-options {
+    display: flex; /* AI-generated code */
+    gap: 0.5rem; /* AI-generated code */
+    flex-wrap: wrap; /* AI-generated code */
+}
+
+/* AI-generated code: Gender button styles */
+.gender-btn {
+    flex: 1; /* AI-generated code */
+    min-width: 120px; /* AI-generated code */
+    padding: 0.875rem 1rem; /* AI-generated code */
+    border: 2px solid #e0e0e0; /* AI-generated code */
+    background: white; /* AI-generated code */
+    border-radius: 12px; /* AI-generated code */
+    font-size: 0.95rem; /* AI-generated code */
+    font-weight: 500; /* AI-generated code */
+    color: #5a6c7d; /* AI-generated code */
+    cursor: pointer; /* AI-generated code */
+    transition: all 0.2s ease; /* AI-generated code */
+}
+
+/* AI-generated code: Gender button hover */
+.gender-btn:hover {
+    border-color: #4A90E2; /* AI-generated code */
+    background: rgba(74, 144, 226, 0.05); /* AI-generated code */
+}
+
+/* AI-generated code: Gender button selected state */
+.gender-btn.selected {
+    border-color: #4A90E2; /* AI-generated code */
+    background: #4A90E2; /* AI-generated code */
+    color: white; /* AI-generated code */
+}
+
+/* AI-generated code: Continue button */
+.continue-btn {
+    width: 100%; /* AI-generated code */
+    padding: 1rem; /* AI-generated code */
+    margin-top: 1.5rem; /* AI-generated code */
+    background: #d0d0d0; /* AI-generated code */
+    color: white; /* AI-generated code */
+    border: none; /* AI-generated code */
+    border-radius: 12px; /* AI-generated code */
+    font-size: 1.1rem; /* AI-generated code */
+    font-weight: 600; /* AI-generated code */
+    cursor: not-allowed; /* AI-generated code */
+    transition: all 0.3s ease; /* AI-generated code */
+}
+
+/* AI-generated code: Continue button enabled state */
+.continue-btn:not(:disabled) {
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%); /* AI-generated code */
+    cursor: pointer; /* AI-generated code */
+}
+
+/* AI-generated code: Continue button hover */
+.continue-btn:not(:disabled):hover {
+    transform: translateY(-2px); /* AI-generated code */
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3); /* AI-generated code */
+}
+
+/* AI-generated code: Continue button active */
+.continue-btn:not(:disabled):active {
+    transform: translateY(0); /* AI-generated code */
+}
+
+/* AI-generated code: Step description text */
+.step-description {
+    color: #6c757d; /* AI-generated code */
+    font-size: 0.95rem; /* AI-generated code */
+    margin-bottom: 1.5rem; /* AI-generated code */
+    font-weight: 400; /* AI-generated code */
+}
+
+/* AI-generated code: Activity and goal options containers */
+.activity-options,
+.goal-options {
+    display: flex; /* AI-generated code */
+    flex-direction: column; /* AI-generated code */
+    gap: 0.75rem; /* AI-generated code */
+}
+
+/* AI-generated code: Activity and goal button styles */
+.activity-btn,
+.goal-btn {
+    width: 100%; /* AI-generated code */
+    padding: 1rem 1.25rem; /* AI-generated code */
+    border: 2px solid #e0e0e0; /* AI-generated code */
+    background: white; /* AI-generated code */
+    border-radius: 12px; /* AI-generated code */
+    text-align: left; /* AI-generated code */
+    cursor: pointer; /* AI-generated code */
+    transition: all 0.2s ease; /* AI-generated code */
+}
+
+/* AI-generated code: Activity and goal button hover */
+.activity-btn:hover,
+.goal-btn:hover {
+    border-color: #4A90E2; /* AI-generated code */
+    background: rgba(74, 144, 226, 0.03); /* AI-generated code */
+}
+
+/* AI-generated code: Activity and goal button selected state */
+.activity-btn.selected,
+.goal-btn.selected {
+    border-color: #4A90E2; /* AI-generated code */
+    background: rgba(74, 144, 226, 0.08); /* AI-generated code */
+    box-shadow: 0 0 0 1px #4A90E2; /* AI-generated code */
+}
+
+/* AI-generated code: Activity and goal option titles */
+.activity-title,
+.goal-title {
+    font-size: 1rem; /* AI-generated code */
+    font-weight: 600; /* AI-generated code */
+    color: #2c3e50; /* AI-generated code */
+    margin-bottom: 0.25rem; /* AI-generated code */
+}
+
+/* AI-generated code: Activity and goal option descriptions */
+.activity-desc,
+.goal-desc {
+    font-size: 0.875rem; /* AI-generated code */
+    color: #6c757d; /* AI-generated code */
+    font-weight: 400; /* AI-generated code */
+}
+
+/* AI-generated code: Checkbox group container */
+.checkbox-group {
+    margin-top: 1.5rem; /* AI-generated code */
+    padding: 1rem; /* AI-generated code */
+    background: #f8f9fa; /* AI-generated code */
+    border-radius: 12px; /* AI-generated code */
+}
+
+/* AI-generated code: Checkbox label */
+.checkbox-label {
+    display: flex; /* AI-generated code */
+    align-items: center; /* AI-generated code */
+    gap: 0.75rem; /* AI-generated code */
+    cursor: pointer; /* AI-generated code */
+    font-weight: 500; /* AI-generated code */
+    color: #2c3e50; /* AI-generated code */
+}
+
+/* AI-generated code: Checkbox input styling */
+.checkbox-label input[type="checkbox"] {
+    width: 20px; /* AI-generated code */
+    height: 20px; /* AI-generated code */
+    cursor: pointer; /* AI-generated code */
+    accent-color: #4A90E2; /* AI-generated code */
+}
+
+/* AI-generated code: Checkbox label text */
+.checkbox-label span {
+    font-size: 1rem; /* AI-generated code */
+}
+
+/* AI-generated code: Checkbox description text */
+.checkbox-desc {
+    margin-top: 0.5rem; /* AI-generated code */
+    margin-left: 2rem; /* AI-generated code */
+    font-size: 0.875rem; /* AI-generated code */
+    color: #6c757d; /* AI-generated code */
+    font-weight: 400; /* AI-generated code */
+}
+
+/* AI-generated code: Button group container */
+.button-group {
+    display: flex; /* AI-generated code */
+    gap: 0.75rem; /* AI-generated code */
+    margin-top: 1.5rem; /* AI-generated code */
+}
+
+/* AI-generated code: Back button */
+.back-btn {
+    flex: 1; /* AI-generated code */
+    padding: 1rem; /* AI-generated code */
+    background: white; /* AI-generated code */
+    color: #5a6c7d; /* AI-generated code */
+    border: 2px solid #e0e0e0; /* AI-generated code */
+    border-radius: 12px; /* AI-generated code */
+    font-size: 1.1rem; /* AI-generated code */
+    font-weight: 600; /* AI-generated code */
+    cursor: pointer; /* AI-generated code */
+    transition: all 0.2s ease; /* AI-generated code */
+}
+
+/* AI-generated code: Back button hover */
+.back-btn:hover {
+    border-color: #4A90E2; /* AI-generated code */
+    background: rgba(74, 144, 226, 0.05); /* AI-generated code */
+}
+
+/* AI-generated code: Continue button in button group */
+.button-group .continue-btn {
+    flex: 2; /* AI-generated code */
+    margin-top: 0; /* AI-generated code */
+}
+
+/* AI-generated code: Reset profile button styles */
+.reset-profile-btn {
+    width: 100%; /* AI-generated code */
+    margin-top: 1.5rem; /* AI-generated code */
+    padding: 0.75rem 1rem; /* AI-generated code */
+    background: transparent; /* AI-generated code */
+    color: #d9534f; /* AI-generated code */
+    border: 2px solid #d9534f; /* AI-generated code */
+    border-radius: 8px; /* AI-generated code */
+    font-size: 0.9rem; /* AI-generated code */
+    font-weight: 600; /* AI-generated code */
+    cursor: pointer; /* AI-generated code */
+    transition: all 0.2s ease; /* AI-generated code */
+}
+
+/* AI-generated code: Reset profile button hover state */
+.reset-profile-btn:hover {
+    background: #d9534f; /* AI-generated code */
+    color: white; /* AI-generated code */
+}
