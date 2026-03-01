@@ -735,6 +735,20 @@ h3 {
   }
 }
 
+.toggle-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #f3f4f6;
+}
+
 footer {
   text-align: center;
   padding: 2rem 0;
@@ -743,3 +757,4 @@ footer {
   color: #475569;
   font-size: 0.9rem;
 }
+
