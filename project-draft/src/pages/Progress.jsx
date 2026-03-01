@@ -21,6 +21,16 @@ export default function Progress() {
 
   const [showPercentage, setShowPercentage] = useState(false);
 
+  const totalWeekCalories = WEEKLY_DATA.reduce(
+    (sum, day) => sum + day.consumed,
+    0
+  );
+
+  const averageCalories = Math.round(
+    totalWeekCalories / WEEKLY_DATA.length
+  );
+
+
   return (
     <>
       <Header />
@@ -70,7 +80,9 @@ export default function Progress() {
             <h2>Calories This Week</h2>
             <p>Your daily caloric intake over the past 7 days</p>
 
-
+            <p>
+              Weekly Average: <strong>{averageCalories} cal/day</strong>
+            </p>
 
             <div className="weekly-chart">
               { }
