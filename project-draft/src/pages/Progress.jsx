@@ -36,8 +36,8 @@ export default function Progress() {
             <h2>Daily Macro Breakdown</h2>
 
             <button
+              className="toggle-btn"
               onClick={() => setShowPercentage(!showPercentage)}
-              style={{ marginBottom: "1rem" }}
             >
               {showPercentage ? "Show Grams" : "Show Percentage"}
             </button>
