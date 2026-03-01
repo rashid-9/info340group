@@ -1,6 +1,23 @@
 import React from "react";
 import Header from "../components/Header.jsx";
 
+// AI-generated code: Sample data for macros (hard-coded constant for draft)
+const MACRO_DATA = [
+  { name: "Protein", amount: "95g", className: "protein", percentage: 80 }, // AI-generated code
+  { name: "Carbohydrates", amount: "250g", className: "carbs", percentage: 65 }, // AI-generated code
+  { name: "Fats", amount: "70g", className: "fat", percentage: 90 } // AI-generated code
+];
+
+// AI-generated code: Sample data for weekly calories (hard-coded constant for draft)
+const WEEKLY_DATA = [
+  { day: "Monday", consumed: 1753, target: 2500 }, // AI-generated code
+  { day: "Tuesday", consumed: 1250, target: 2500 }, // AI-generated code
+  { day: "Wednesday", consumed: 2013, target: 2500 }, // AI-generated code
+  { day: "Thursday", consumed: 1572, target: 2500 }, // AI-generated code
+  { day: "Friday", consumed: 2245, target: 2500 }, // AI-generated code
+  { day: "Saturday", consumed: 1000, target: 2500 }, // AI-generated code
+  { day: "Sunday", consumed: 1875, target: 2500 } // AI-generated code
+];
 
 export default function Progress() {
     return (
@@ -17,26 +34,18 @@ export default function Progress() {
             <div className="budget-card">
               <h2>Daily Macro Breakdown</h2>
   
-              <div className="macro">
-                <p>Protein <span>95g</span></p>
-                <div className="bar">
-                  <div className="bar-fill protein"></div>
+              {/* AI-generated code: Data-driven macro rendering using .map() */}
+              {MACRO_DATA.map((macro) => (
+                <div className="macro" key={macro.name}>
+                  <p>{macro.name} <span>{macro.amount}</span></p>
+                  <div className="bar">
+                    <div 
+                      className={`bar-fill ${macro.className}`}
+                      style={{ width: `${macro.percentage}%` }} /* AI-generated code */
+                    ></div>
+                  </div>
                 </div>
-              </div>
-  
-              <div className="macro">
-                <p>Carbohydrates <span>250g</span></p>
-                <div className="bar">
-                  <div className="bar-fill carbs"></div>
-                </div>
-              </div>
-  
-              <div className="macro">
-                <p>Fats <span>70g</span></p>
-                <div className="bar">
-                  <div className="bar-fill fat"></div>
-                </div>
-              </div>
+              ))}
             </div>
           </section>
   
@@ -46,56 +55,18 @@ export default function Progress() {
               <p>Your daily caloric intake over the past 7 days</p>
   
               <div className="weekly-chart">
-  
-                <div className="day">
-                  <p>Monday <span>1,753 / 2500 cal</span></p>
-                  <div className="bar">
-                    <div className="bar-fill calories" style={{ width: "70%" }} />
-                  </div>
-                </div>
-  
-                <div className="day">
-                  <p>Tuesday <span>1,250 / 2500 cal</span></p>
-                  <div className="bar">
-                    <div className="bar-fill calories" style={{ width: "50%" }} />
-                  </div>
-                </div>
-  
-                <div className="day">
-                  <p>Wednesday <span>2,013 / 2500 cal</span></p>
-                  <div className="bar">
-                    <div className="bar-fill calories" style={{ width: "80%" }} />
-                  </div>
-                </div>
-  
-                <div className="day">
-                  <p>Thursday <span>1,572 / 2500 cal</span></p>
-                  <div className="bar">
-                    <div className="bar-fill calories" style={{ width: "60%" }} />
-                  </div>
-                </div>
-  
-                <div className="day">
-                  <p>Friday <span>2,245 / 2500 cal</span></p>
-                  <div className="bar">
-                    <div className="bar-fill calories" style={{ width: "90%" }} />
-                  </div>
-                </div>
-  
-                <div className="day">
-                  <p>Saturday <span>1,000 / 2500 cal</span></p>
-                  <div className="bar">
-                    <div className="bar-fill calories" style={{ width: "40%" }} />
-                  </div>
-                </div>
-  
-                <div className="day">
-                  <p>Sunday <span>1,875 / 2500 cal</span></p>
-                  <div className="bar">
-                    <div className="bar-fill calories" style={{ width: "75%" }} />
-                  </div>
-                </div>
-  
+                {/* AI-generated code: Data-driven weekly calorie rendering using .map() */}
+                {WEEKLY_DATA.map((dayData) => {
+                  const percentage = Math.round((dayData.consumed / dayData.target) * 100); // AI-generated code
+                  return (
+                    <div className="day" key={dayData.day}>
+                      <p>{dayData.day} <span>{dayData.consumed} / {dayData.target} cal</span></p>
+                      <div className="bar">
+                        <div className="bar-fill calories" style={{ width: `${percentage}%` }} /> {/* AI-generated code */}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </section>
