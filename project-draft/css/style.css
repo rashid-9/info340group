@@ -76,8 +76,7 @@ h3 {
     width: auto;
 }
 
-/* ARIES CSS */
-/* CSS for "Today's Budget" section */
+
 
 .budget-section {
   margin: 3rem auto;
@@ -115,7 +114,7 @@ h3 {
   border-radius: 999px;
 }
 
-/* Static placeholder widths */
+
 .calories {
   width: 20%;
   background-color: #2563eb;
@@ -142,7 +141,7 @@ h3 {
   margin: 0.5rem 0;
 }
 
-/* RYAN CSS*/
+
 .goal-card {
   background-color: #f3f7ff;
   border: 2px solid #cfe0ff;
@@ -215,14 +214,14 @@ h3 {
   gap: 12px;
 }
 
-/* CSS for log-food.html */
 
-/* Spacing */
+
+
 .progress-section {
   margin-bottom: 2rem;
 }
 
-/* Search form */
+
 .logfood-search {
   margin-top: 1rem;
 }
@@ -242,7 +241,7 @@ h3 {
   color: #9ca3af;
 }
 
-/* Add Custom Food  */
+
 .logfood-add {
   display: inline-block;
   margin-top: 0.5rem;
@@ -255,7 +254,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* Accessibility */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -268,7 +267,7 @@ h3 {
   border: 0;
 }
 
-/* Todays Food CSS */
+
 
 .today-foods {
   max-width: 760px;
