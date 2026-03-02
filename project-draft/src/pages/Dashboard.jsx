@@ -90,6 +90,10 @@ export default function Dashboard() {
     fat: 3
   });
 
+  useEffect(() => {
+  localStorage.setItem("dailyConsumed", JSON.stringify(consumed));
+}, [consumed]);
+
   // AI-generated code: Load user profile from localStorage and calculate targets
   useEffect(() => {
     const profileData = localStorage.getItem("userProfile"); // AI-generated code
