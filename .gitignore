@@ -1,10 +1,5 @@
-# macOS
+node_modules
+project-draft/node_modules
 .DS_Store
-
-# dependencies
-node_modules/
-
-# Vite cache
-node_modules/.vite/
-
-# build output
+.vite
+dist
