@@ -247,7 +247,6 @@ export default function Welcome() {
                   <div className="activity-desc">Hard exercise 6-7 days/week</div>
                 </button>
 
-                {/* AI-generated code: Extremely Active option */}
                 <button
                   type="button"
                   className={`activity-btn ${formData.activityLevel === "Extremely Active" ? "selected" : ""}`}
