@@ -1,0 +1,5 @@
+node_modules
+project-draft/node_modules
+.DS_Store
+.vite
+dist
