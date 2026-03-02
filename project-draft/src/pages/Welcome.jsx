@@ -205,56 +205,24 @@ export default function Welcome() {
               <h2>Activity Level</h2>
               <p className="step-description">How active are you on a typical day?</p>
 
-              {/* AI-generated code: Activity level options */}
               <div className="activity-options">
-                {/* AI-generated code: Sedentary option */}
-                <button
-                  type="button"
-                  className={`activity-btn ${formData.activityLevel === "Sedentary" ? "selected" : ""}`}
-                  onClick={() => handleActivitySelect("Sedentary")}
-                >
-                  <div className="activity-title">Sedentary</div>
-                  <div className="activity-desc">Little to no exercise</div>
-                </button>
-
-                {/* AI-generated code: Lightly Active option */}
-                <button
-                  type="button"
-                  className={`activity-btn ${formData.activityLevel === "Lightly Active" ? "selected" : ""}`}
-                  onClick={() => handleActivitySelect("Lightly Active")}
-                >
-                  <div className="activity-title">Lightly Active</div>
-                  <div className="activity-desc">Light exercise 1-3 days/week</div>
-                </button>
-
-                {/* AI-generated code: Moderately Active option */}
-                <button
-                  type="button"
-                  className={`activity-btn ${formData.activityLevel === "Moderately Active" ? "selected" : ""}`}
-                  onClick={() => handleActivitySelect("Moderately Active")}
-                >
-                  <div className="activity-title">Moderately Active</div>
-                  <div className="activity-desc">Moderate exercise 3-5 days/week</div>
-                </button>
-
-                {/* AI-generated code: Very Active option */}
-                <button
-                  type="button"
-                  className={`activity-btn ${formData.activityLevel === "Very Active" ? "selected" : ""}`}
-                  onClick={() => handleActivitySelect("Very Active")}
-                >
-                  <div className="activity-title">Very Active</div>
-                  <div className="activity-desc">Hard exercise 6-7 days/week</div>
-                </button>
-
-                <button
-                  type="button"
-                  className={`activity-btn ${formData.activityLevel === "Extremely Active" ? "selected" : ""}`}
-                  onClick={() => handleActivitySelect("Extremely Active")}
-                >
-                  <div className="activity-title">Extremely Active</div>
-                  <div className="activity-desc">Hard daily exercise & physical job</div>
-                </button>
+                {[
+                  { level: "Sedentary", desc: "Little to no exercise" },
+                  { level: "Lightly Active", desc: "Light exercise 1-3 days/week" },
+                  { level: "Moderately Active", desc: "Moderate exercise 3-5 days/week" },
+                  { level: "Very Active", desc: "Hard exercise 6-7 days/week" },
+                  { level: "Extremely Active", desc: "Hard daily exercise & physical job" }
+                ].map(({ level, desc }) => (
+                  <button
+                    key={level}
+                    type="button"
+                    className={`activity-btn ${formData.activityLevel === level ? "selected" : ""}`}
+                    onClick={() => handleActivitySelect(level)}
+                  >
+                    <div className="activity-title">{level}</div>
+                    <div className="activity-desc">{desc}</div>
+                  </button>
+                ))}
               </div>
             </>
           )}
