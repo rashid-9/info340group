@@ -936,3 +936,97 @@ footer {
   color: var(--text-light);
   font-size: 0.9rem;
 }
+
+.logfood-toast {
+  position: fixed; top: 16px; right: 16px; z-index: 999;
+  background: #22c55e; color: white; padding: 10px 18px;
+  border-radius: 8px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: fadeInOut 2s ease forwards;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-8px); }
+  10% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.logfood-search-wrap { position: relative; margin-top: 1rem; }
+.logfood-search-icon {
+  position: absolute; left: 14px; top: 50%;
+  transform: translateY(-50%); font-size: 14px;
+}
+.logfood-input {
+  width: 100%; padding: 14px 16px 14px 42px;
+  border: 2px solid var(--border); border-radius: 16px;
+  font-size: 16px; font-family: 'Encode Sans Condensed', sans-serif;
+  outline: none; box-sizing: border-box; background: white;
+}
+.logfood-input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+
+.logfood-results {
+  margin-top: 8px; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden;
+}
+.logfood-result-item {
+  width: 100%; text-align: left; padding: 12px 16px;
+  background: none; border: none; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background 0.15s;
+}
+.logfood-result-item:last-child { border-bottom: none; }
+.logfood-result-item:hover { background: #f0f4ff; }
+.logfood-result-name { font-weight: 600; font-size: 15px; color: var(--text-dark); }
+.logfood-result-meta { font-size: 12px; color: var(--text-light); margin: 2px 0; }
+.logfood-result-macros { font-size: 13px; color: var(--text-light); }
+
+.logfood-detail {
+  margin-top: 16px; background: #f0f4ff;
+  border-radius: 12px; padding: 16px;
+}
+.logfood-detail-header {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; margin-bottom: 12px;
+}
+.logfood-detail-name { font-weight: 700; font-size: 17px; color: var(--text-dark); }
+.logfood-detail-serving { font-size: 13px; color: var(--text-light); }
+.logfood-close { background: none; border: none; font-size: 18px; color: var(--text-light); cursor: pointer; }
+.logfood-detail-body { display: flex; gap: 24px; align-items: flex-end; margin-bottom: 12px; }
+.logfood-label { font-size: 13px; color: var(--text-light); margin-bottom: 6px; }
+.logfood-servings {
+  padding: 10px 14px; border: 1px solid var(--border);
+  border-radius: 8px; font-size: 15px; width: 140px; background: white;
+}
+.logfood-cals { font-size: 28px; font-weight: 700; color: var(--text-dark); }
+.logfood-macros-row { display: flex; gap: 16px; font-size: 13px; color: var(--text-light); margin-bottom: 14px; }
+.logfood-add-btn {
+  width: 100%; padding: 14px; background: var(--blue);
+  color: white; border: none; border-radius: 10px;
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  transition: background 0.2s;
+}
+.logfood-add-btn:hover { background: #1d4ed8; }
+
+.logfood-add-custom {
+  background: none; border: none; color: var(--blue);
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  font-family: 'Encode Sans Condensed', sans-serif; padding: 4px 0;
+}
+.logfood-custom-form { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+.logfood-custom-input {
+  padding: 10px 14px; border: 1px solid var(--border);
+  border-radius: 8px; font-size: 14px; outline: none;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+.logfood-custom-input:focus { border-color: var(--blue); }
+.logfood-custom-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.logfood-totals {
+  display: flex; gap: 16px; font-size: 13px; font-weight: 600;
+  color: var(--text-light); margin-bottom: 16px;
+  padding: 10px 14px; background: #f8fafc; border-radius: 8px;
+}
+.logfood-remove {
+  background: none; border: none; color: var(--border);
+  cursor: pointer; font-size: 16px; padding: 4px; transition: color 0.15s;
+}
+.logfood-remove:hover { color: #ef4444; }
