@@ -90,6 +90,26 @@ export default function Welcome() {
                              currentStep === 2 ? isStep2Valid : 
                              isStep3Valid;
 
+  const activityLevels = [
+    { level: "Sedentary", desc: "Little to no exercise" },
+    { level: "Lightly Active", desc: "Light exercise 1-3 days/week" },
+    { level: "Moderately Active", desc: "Moderate exercise 3-5 days/week" },
+    { level: "Very Active", desc: "Hard exercise 6-7 days/week" },
+    { level: "Extremely Active", desc: "Hard daily exercise & physical job" }
+  ];
+
+  const activityButtons = activityLevels.map(({ level, desc }) => (
+    <button
+      key={level}
+      type="button"
+      className={`activity-btn ${formData.activityLevel === level ? "selected" : ""}`}
+      onClick={() => handleActivitySelect(level)}
+    >
+      <div className="activity-title">{level}</div>
+      <div className="activity-desc">{desc}</div>
+    </button>
+  ));
+
   return (
     // AI-generated code: Welcome page container
     <div className="welcome-container">
@@ -206,23 +226,7 @@ export default function Welcome() {
               <p className="step-description">How active are you on a typical day?</p>
 
               <div className="activity-options">
-                {[
-                  { level: "Sedentary", desc: "Little to no exercise" },
-                  { level: "Lightly Active", desc: "Light exercise 1-3 days/week" },
-                  { level: "Moderately Active", desc: "Moderate exercise 3-5 days/week" },
-                  { level: "Very Active", desc: "Hard exercise 6-7 days/week" },
-                  { level: "Extremely Active", desc: "Hard daily exercise & physical job" }
-                ].map(({ level, desc }) => (
-                  <button
-                    key={level}
-                    type="button"
-                    className={`activity-btn ${formData.activityLevel === level ? "selected" : ""}`}
-                    onClick={() => handleActivitySelect(level)}
-                  >
-                    <div className="activity-title">{level}</div>
-                    <div className="activity-desc">{desc}</div>
-                  </button>
-                ))}
+                {activityButtons}
               </div>
             </>
           )}
