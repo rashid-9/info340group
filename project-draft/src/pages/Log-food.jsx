@@ -113,6 +113,10 @@ export default function LogFood() {
     fat: acc.fat + e.fat,
   }), { calories: 0, protein: 0, carbs: 0, fat: 0 });
 
+  useEffect(() => {
+    localStorage.setItem("dailyConsumed", JSON.stringify(totals));
+  }, [totals]);
+
   return (
     <>
       <Header />

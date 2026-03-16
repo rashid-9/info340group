@@ -29,6 +29,17 @@ export default function Progress() {
     }
   }, []);
 
+  useEffect(() => {
+  const interval = setInterval(() => {
+    const storedConsumed = localStorage.getItem("dailyConsumed");
+    if (storedConsumed) {
+      setConsumed(JSON.parse(storedConsumed));
+    }
+  }, 500);
+
+  return () => clearInterval(interval);
+}, []);
+
   if (!targets || !consumed) {
     return (
       <>
