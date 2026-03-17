@@ -73,6 +73,7 @@ export default function LogFood() {
     const updated = [entry, ...log];
     setLog(updated);
     saveLog(updated);
+    window.dispatchEvent(new Event("foodLogUpdated"));
     setAdded(entry.name);
     setSelected(null);
     setQuery("");
@@ -83,6 +84,7 @@ export default function LogFood() {
     const updated = log.filter(e => e.id !== id);
     setLog(updated);
     saveLog(updated);
+    window.dispatchEvent(new Event("foodLogUpdated"));
   }
 
   function addCustomFood() {
@@ -100,6 +102,7 @@ export default function LogFood() {
     const updated = [entry, ...log];
     setLog(updated);
     saveLog(updated);
+    window.dispatchEvent(new Event("foodLogUpdated"));
     setCustom({ name: "", serving: "", calories: "", protein: "", carbs: "", fat: "" });
     setShowCustom(false);
     setAdded(entry.name);
