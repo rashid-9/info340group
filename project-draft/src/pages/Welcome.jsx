@@ -1,6 +1,8 @@
 // AI-generated code: Welcome/Onboarding component for NutriTrack
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 export default function Welcome() {
   // AI-generated code: Hook for navigation
@@ -60,14 +62,18 @@ export default function Welcome() {
   };
 
   // AI-generated code: Handle continue/submit button
-  const handleContinue = () => {
+  const handleContinue = async () => {
     if (currentStep < 3) { // AI-generated code: Move to next step
       setCurrentStep(currentStep + 1); // AI-generated code
     } else { // AI-generated code: Final step - save and navigate
       // AI-generated code: Save user data to localStorage
       localStorage.setItem("userProfile", JSON.stringify(formData)); // AI-generated code
       localStorage.setItem("hasCompletedOnboarding", "true"); // AI-generated code
-      
+
+      // Save user profile to Firestore database
+      const userId = "user_" + Date.now();
+      await setDoc(doc(db, "userProfiles", userId), formData);
+
       // AI-generated code: Navigate to dashboard
       navigate("/dashboard"); // AI-generated code
     }
