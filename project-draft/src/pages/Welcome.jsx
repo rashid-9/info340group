@@ -1,6 +1,6 @@
 // AI-generated code: Welcome/Onboarding component for NutriTrack
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
 

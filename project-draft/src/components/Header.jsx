@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 
 const navStyle = ({ isActive }) => ({
   padding: "8px 16px",

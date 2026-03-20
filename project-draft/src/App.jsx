@@ -5,7 +5,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import Welcome from "./pages/Welcome.jsx";
 import "../css/style.css";
 
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 
 function ProtectedRoute({ children }) {
   const hasCompletedOnboarding = localStorage.getItem("hasCompletedOnboarding");
