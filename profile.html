@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriTrack - Calorie & Nutrient Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Step Navigation (Hidden) -->
+            <input type="radio" name="step" id="step1" checked>
+
+            <!-- Header -->
+            <div class="header">
+                <div class="icon-circle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="3" y="3" width="7" height="7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="14" y="3" width="7" height="7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="14" y="14" width="7" height="7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="3" y="14" width="7" height="7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1>Welcome to NutriTrack</h1>
+            </div>
+
+            <!-- Step 1 Content -->
+            <div class="step-content" id="content1">
+                <h2>Basic Information</h2>
+                
+                <div class="input-group">
+                    <label>Age</label>
+                    <input type="text" value="25">
+                </div>
+
+                <div class="input-group">
+                    <label>Height (cm)</label>
+                    <input type="text" value="170">
+                </div>
+
+                <div class="input-group">
+                    <label>Weight (kg)</label>
+                    <input type="text" value="70">
+                </div>
+
+                <div class="input-group">
+                    <label>Gender (optional)</label>
+                    <div class="gender-buttons">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male" class="gender-btn">Male</label>
+                        
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female" class="gender-btn">Female</label>
+                        
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other" class="gender-btn">Prefer not to say</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!--Claude helped code this rough draft-->
